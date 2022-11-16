@@ -1,0 +1,107 @@
+ /*=======================Mazada Consortium ltd=============*/
+  /* Sidebar
+================================================== */
+.mazada_wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.mazada_wrapper .wrapper_left {
+  width: 400px;
+  padding: 0 25px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.wrapper_left ul{
+  list-style: none;
+  display: block;
+  justify-content: space-around;
+}
+
+.wrapper_left ul li{
+  background-color: gray;
+  line-height: 30px;
+  padding: 12px 8px;
+  border: 0;
+  margin-bottom: 8px;
+  transition: 400ms;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.wrapper_left ul li:hover{
+  background-color: yellow;
+}
+
+.wrapper_left ul li.active{
+  background-color:green;
+}
+
+.wrapper_left ul li.active p {
+  color: #fff;
+}
+.wrapper_left ul li.active:before {
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+
+.wrapper_left ul li p{
+  color: #303030;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.wrapper_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.mazada_wrapper .wrapper_right {
+  width: 100%;
+  padding: 10px 2px;
+  border: none;
+}
+
+.wrapper_right .item p{
+  font-size: 15px;
+  text-align:justify;
+  font-weight:500;
+}
+
+.wrapper_right .item_info img{
+  width: 900px;
+  height: 400px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper_right .item_info p{
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+.wrapper_right .item_info p span{
+  color: #00ABB3;
+}
+
+.list-arrow{
+  padding: 0;
+  list-style:none;
+}
+
+.list-arrow li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  margin-right: 10px;
+  color: #ffb600;
+  font-size: 16px;
+  font-weight: bold;
+}
